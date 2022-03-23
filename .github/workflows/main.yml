@@ -2,12 +2,9 @@ name: run-script
 on: push
 
 jobs:
-run:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v1
-- name: script
-run: PATH/script.sh
-shell: bash
+    run:
+       runs-on: ubuntu-latest
+       steps:
+         - run : bash setup
 
 
